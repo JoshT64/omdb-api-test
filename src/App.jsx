@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { useState } from "react";
 import { Table } from "./components/Table";
+import { Content } from "./components/Content";
 
 function App() {
   const [movieTitle, setMovieTitle] = useState("");
@@ -18,12 +19,7 @@ function App() {
         />
       </div>
       <Table movieData={foundMovies} />
-      {foundMovies.length === 0 && (
-        <div>
-          <h1 className="text-md font-mono">Input a movie and search!</h1>
-          <p className="font-mono">(mobile responsive !)</p>
-        </div>
-      )}
+      <Content foundMovies={foundMovies} />
     </div>
   );
 }
