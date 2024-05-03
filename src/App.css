@@ -46,6 +46,9 @@
   left: 0;
   right: 0;
   z-index: 10;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <div className="input-button">
+      <div className="input-button items-center">
         <Input getMovie={(data) => setMovieTitle(data)} />
         <Button
           movieData={(data) => setFoundMovies(data)}

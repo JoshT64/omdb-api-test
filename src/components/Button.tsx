@@ -16,7 +16,7 @@ export const Button = ({ movieTitle, movieData }) => {
   };
 
   return (
-    <button className="sm:w-[20vw] m-2 " onClick={() => getMovie()}>
+    <button className=" m-1 " onClick={() => getMovie()}>
       {!error ? "Search Movies" : "Error!"}
     </button>
   );
